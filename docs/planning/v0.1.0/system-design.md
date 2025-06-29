@@ -40,7 +40,7 @@ The Website API serves as the backend for the Synonym module, handling requests 
   - `id`: Primary key
   - `vocabularies`: Array or JSON of vocabulary words (unique constraint on sorted values)
   - `explanation`: Text
-  - `language`: Language code of the explanation (e.g., 'en', 'zh')
+  - `language`: Language code of the explanation (e.g., 'en-US', 'zh-TW')
   - `created_at`: Timestamp
 
 ## AI Integration
