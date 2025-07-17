@@ -1,6 +1,7 @@
 package database
 
 import (
+	"english-step/website-api/database/models"
 	"fmt"
 	"log"
 	"os"
@@ -39,4 +40,22 @@ func Init() {
 	sqlDB.SetMaxIdleConns(10)
 	sqlDB.SetMaxOpenConns(50)
 	sqlDB.SetConnMaxLifetime(time.Hour)
+}
+
+// MigrateDev runs auto-migration for all models in the development environment.
+func MigrateDev() {
+	env := os.Getenv("ENV")
+	if env != "development" {
+		log.Println("Skipping migration: not in development environment")
+		return
+	}
+
+	// TODO: Add your models here, e.g., &User{}, &Post{}
+	err := DB.AutoMigrate(
+		&models.SynonymExplanation{},
+	)
+	if err != nil {
+		log.Fatalf("AutoMigrate failed: %v", err)
+	}
+	log.Println("Database migration completed (development environment)")
 }
