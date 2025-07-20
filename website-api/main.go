@@ -4,6 +4,7 @@ import (
 	"english-step/website-api/database"
 	"log"
 
+	_ "ariga.io/atlas-provider-gorm/gormschema"
 	"github.com/joho/godotenv"
 )
 
