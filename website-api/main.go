@@ -5,6 +5,7 @@ import (
 	"log"
 
 	_ "ariga.io/atlas-provider-gorm/gormschema"
+	_ "github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 )
 
