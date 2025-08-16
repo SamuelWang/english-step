@@ -6,6 +6,13 @@ A monorepo project containing a Next.js frontend and a Go backend API.
 - `website/` – Next.js frontend application (TypeScript)
 - `website-api/` – Go backend API service
 
+## Documentations
+
+- [Specifications](specs)
+- [Development Guideline](DEVELOPMENT.md)
+- [Backend README](website-api/README.md)
+- [Backend Development Guideline](website-api/DEVELOPMENT.md)
+
 ## Getting Started
 
 ## Sub-projects
@@ -29,4 +36,4 @@ A monorepo project containing a Next.js frontend and a Go backend API.
 1. Run `cd website-api` to switch the working folder to `website-api` folder.
 2. Run the API server: `go run .`.
 
-See `DEVELOPMENT.md` for more details.
+See [DEVELOPMENT.md](DEVELOPMENT.md) for more details.
