@@ -37,3 +37,6 @@ To run the API locally:
 ```sh
 go run main.go
 ```
+
+## Development guide
+See `DEVELOPMENT.md` for conventions, folder layout, middleware patterns, and examples used when developing the `website-api` service.
